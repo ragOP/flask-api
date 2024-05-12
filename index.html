@@ -1,0 +1,317 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Quiz</title>
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="css/font.css">
+
+    <script src="js/unilpclick.js"></script>
+    <!-- fontawesome 5 -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom Css Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animation.css">
+
+    <!--Thankyou CSS-->
+    <link rel="stylesheet" href="css/thankyou.css">
+    <style>
+    .headz {text-align: center;color: black;font-size: 2rem;margin: 0 auto;padding-top: 15px;max-width: 950px;
+    width: 70%;}
+    main {background-image: none;}
+    .steps {padding-top: 0;}
+
+    .quiz-question {height: auto;padding: 25px 50px;font-size: 30px;text-transform: none;}
+
+    .thankyou-page article h1 {
+font-size: 55px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.thankyou-page article {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.thankyou-page {
+    background-color: white !important;
+    background-image: none !important;
+}
+
+.thankyou-page article p {font-size: 20px;font-family: "Poppins";    margin-top: 30px;
+    margin-bottom: 30px;}
+
+
+
+    @media (max-width: 550px)
+{
+.headz {text-align: center;color: black;font-size: 1.2rem;margin: 0 auto;ax-width: 950px;font-weight: bold;
+    width: 93%;}
+
+    .thankyou-page article {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.thankyou-page article h1 {
+    font-size: 26px;
+    padding: 0 25px;}
+
+    .thankyou-page article span {font-size: 20px;
+    padding: 0;}
+
+        .quiz-question {height: auto;padding: 15px 35px;font-size: 22px;text-transform: none;}
+
+
+.thankyou-page article p {font-size: 18px;font-family: "Poppins";    margin-top: 30px;
+    margin-bottom: 30px;}
+
+    .thankyou-page article p {
+    width: 100%;padding: 0 30px;
+}
+}
+
+         .btn-grad {
+            background-image: linear-gradient(to right, #1676ba 0%, #0aabc7  51%, #1676ba  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+    </style>
+
+</head>
+<body>
+
+    <main class="overflow-hidden">
+        <header>
+
+            <!-- countdown -->
+            <div class="headz">
+                Please answer these 5 short questions to see if you qualify to view this educational video.
+            </div>
+        </header>
+
+        <div class="container h-100">
+
+            <form method="post" class="show-section">
+
+                <!-- step 1 -->
+                <section class="steps">
+                    <h1 class="quiz-question">
+                        Are you a man or a woman?
+                    </h1>
+
+                    <!-- form fields -->
+                    <fieldset id="step1">
+                        <div class="radio-field bounce-left">
+                            <input type="radio" name="op1" value="outer core">
+                            <label>Man</label>
+                        </div>
+                        <div class="radio-field bounce-left delay-100">
+                            <input type="radio" name="op1" value="inner core">
+                            <label>Woman</label>
+                        </div>
+                        
+                    </fieldset>
+
+                    <!-- next prev button
+                    <div class="next-prev">
+                        <button class="next" id="step1btn" type="button">next QUESTION<i class="fa-solid fa-arrow-right"></i></button>
+                    </div> -->
+                </section>
+
+                <!-- step 2 -->
+                <section class="steps">
+                    <h1 class="quiz-question">
+                        Have you been on a diet in the last 6 months?
+                    </h1>
+
+                    <!-- form fields -->
+                    <fieldset id="step2">
+                        <div class="radio-field bounce-left">
+                            <input type="radio" name="op2" value="Andaman islands">
+                            <label>Yes</label>
+                        </div>
+                        <div class="radio-field bounce-left delay-100">
+                            <input type="radio" name="op2" value="Nicobar islands">
+                            <label>No</label>
+                        </div>
+                        
+                    </fieldset>
+
+                    <!-- next prev button
+                    <div class="next-prev">
+                        <button class="prev" type="button"><i class="fa-solid fa-arrow-left"></i>LAST QUESTION</button>
+                        <button class="next" id="step2btn" type="button">next QUESTION<i class="fa-solid fa-arrow-right"></i></button>
+                    </div> -->
+                </section>
+
+                 <!-- step 3 -->
+                <section class="steps">
+                    <h1 class="quiz-question">
+                        What is your weight loss goal?
+                    </h1>
+
+                    <!-- form fields -->
+                    <fieldset id="step3">
+                        <div class="radio-field bounce-left">
+                            <input type="radio" name="op3" value="outer core">
+                            <label>Lose 1-20 pounds for good</label>
+                        </div>
+                        <div class="radio-field bounce-left delay-100">
+                            <input type="radio" name="op3" value="inner core">
+                            <label>Lose 21-50 pounds for good</label>
+                        </div>
+                        <div class="radio-field bounce-left delay-200">
+                            <input type="radio" name="op3" value="outer mantle">
+                            <label>Lose over 50 pounds for good</label>
+                        </div>
+                        
+                    </fieldset>
+
+                    <!-- next prev button
+                    <div class="next-prev">
+                        <button class="prev" type="button"><i class="fa-solid fa-arrow-left"></i>LAST QUESTION</button>
+                        <button class="next" id="step3btn" type="button">next QUESTION<i class="fa-solid fa-arrow-right"></i></button>
+                    </div> -->
+                </section>
+
+                <!-- step 4 -->
+                <section class="steps">
+                    <h1 class="quiz-question">
+                        Are you interested in losing up to 2 lbs of fat every 48 hours?
+                    </h1>
+
+                    <!-- form fields -->
+                    <fieldset id="step4">
+                        <div class="radio-field bounce-left">
+                            <input type="radio" name="op4" value="Andaman islands">
+                            <label>Yes</label>
+                        </div>
+                        <div class="radio-field bounce-left delay-100">
+                            <input type="radio" name="op4" value="Nicobar islands">
+                            <label>No</label>
+                        </div>
+                        
+                    </fieldset>
+
+                    <!-- next prev button
+                    <div class="next-prev">
+                        <button class="prev" type="button"><i class="fa-solid fa-arrow-left"></i>LAST QUESTION</button>
+                        <button class="next" id="sub" type="button">Submit<i class="fa-solid fa-arrow-right"></i></button>
+                    </div> -->
+                </section>
+
+                <!-- step 5 -->
+                <section class="steps">
+                    <h1 class="quiz-question">
+                        This video contains new and easy method for losing weight fast. Do you promise to watch the video in full?
+                    </h1>
+
+                    <!-- form fields -->
+                    <fieldset id="step5">
+                        <div class="radio-field bounce-left">
+                            <input type="radio" name="op5" value="Andaman islands">
+                            <label>Yes</label>
+                        </div>
+                        <div class="radio-field bounce-left delay-100">
+                            <input type="radio" name="op5" value="Nicobar islands">
+                            <label>No</label>
+                        </div>
+                        
+                    </fieldset>
+
+                    <!-- next prev button
+                    <div class="next-prev">
+                        <button class="prev" type="button"><i class="fa-solid fa-arrow-left"></i>LAST QUESTION</button>
+                        <button class="next" id="sub" type="button">Submit<i class="fa-solid fa-arrow-right"></i></button>
+                    </div> -->
+                </section>
+            </form>
+        </div>
+    </main>
+
+    <!-- result -->
+    <div class="loadingresult">
+        <img src="images/loading.gif" alt="loading">
+    </div>
+
+    <div class="main  thankyou-page">
+        <div class="main-inner">
+            <article>
+                <h1>Congratulations!</h1>
+                <!--<p>You Qualify You For The <b>"Exotic Rice Hack"</b></p>-->
+                <p style="font-weight: bold;">Your spot has been reserved!</p>
+                <p><!--Your spot has been reserved. -->Please watch this video presentation <b>immediately</b> as it could be taken down at any moment.</p>
+                <div style="text-align:center;padding-left:15px;margin: 0 auto;padding-right:15px;    /* max-width: 400px; */
+    display: inline-block;">
+            <a href="https://redireoct.com/click" style="text-decoration: none;"><div class="btn-grad" style="
+              -webkit-border-radius: 5;
+              -moz-border-radius: 5;
+              border-radius: 5px;
+              font-size: 20px;
+              padding: 15px 15px 15px 15px;
+              border: solid rgba(0,0,0,0.2) 2px;
+              text-decoration: none;
+              text-shadow:0 1px 1px rgb(0 0 0 / 90%)
+            ">
+
+            <span style="color:white;font-size: 20px;font-weight: bold;margin:0 auto;text-align: center;">Click Here To Watch The Video ➤➤</span></div>
+
+            </a>  
+
+            </div>
+                
+            </article>
+        </div>
+    </div>
+
+    <div id="error"></div>
+
+<div style="padding-top:700px;text-align:center;    font-weight: 400;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color:#757575;">
+    <div class="twelve columns">
+      <p>RiceRoutine © 2024 All Rights Reserved
+      </p><p><a href="contact.html">Contact</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+      <p>THIS IS AN ADVERTISEMENT AND NOT AN ACTUAL NEWS ARTICLE, BLOG, OR CONSUMERS PROTECTION UPDATE</p>
+      <p>This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc</p>
+    </div>
+  </div>
+
+    <!-- bootstrap 5 -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+
+    <!-- <Thankyou JS -->
+        <script src="js/thankyou.js"></script>
+    <!-- Custom js -->
+    <script src="js/custom.js"></script>
+    
+
+</body></html>
